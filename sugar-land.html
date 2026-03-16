@@ -50,6 +50,7 @@
       --navy-mid:    #134074;
       --gold:        #F0B429;
       --gold-light:  #F5CC5A;
+      --gold-text:   #8B6400;
       --white:       #ffffff;
       --off-white:   #F8FAFC;
       --text-dark:   #0F1C2E;
@@ -95,7 +96,7 @@
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--gold-text);
       margin-bottom: 0.5rem;
     }
 
@@ -561,7 +562,7 @@
       margin-top: 1.25rem;
       font-size: 0.85rem;
       font-weight: 700;
-      color: var(--gold);
+      color: var(--gold-text);
       letter-spacing: 0.03em;
       transition: color var(--transition);
     }
@@ -842,7 +843,7 @@
       display: block;
       font-size: 0.78rem;
       font-weight: 700;
-      color: var(--gold);
+      color: var(--gold-text);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       margin-bottom: 3px;
@@ -949,6 +950,13 @@
       opacity: 0.92;
       transform: translateY(-1px);
       box-shadow: 0 6px 24px rgba(11,37,69,0.35);
+    }
+
+    .form-submit:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
     }
 
     /* =============================================
@@ -1549,7 +1557,7 @@
             <textarea id="message" name="message" placeholder="Tell us about your mail volume, locations, or any special requirements..."></textarea>
           </div>
 
-          <button type="submit" class="form-submit">Send Quote Request</button>
+          <button type="submit" class="form-submit" disabled>Send Quote Request</button>
         </div>
 
       </div>
