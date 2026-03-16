@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Word's Mail Service | The Woodlands Mail &amp; Courier Services</title>
-  <meta name="description" content="Postal service, interoffice mail, and bank deposit courier services for The Woodlands, TX businesses. Word's Mail Service of Texas — est. 1977.">
+  <title>Houston Postal Services for Businesses | Word's Mail Service of Texas</title>
+  <meta name="description" content="Business postal services in Houston, TX — outgoing mail prep, metering, sorting, and scheduled pickups. Word's Mail Service of Texas has served Houston businesses since 1977.">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="US-TX">
-  <meta name="geo.placename" content="The Woodlands, Texas">
+  <meta name="geo.placename" content="Houston, Texas">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,26 +23,16 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
-    img, svg {
-      display: block;
-      max-width: 100%;
-    }
+    img, svg { display: block; max-width: 100%; }
 
-    ul {
-      list-style: none;
-    }
+    ul { list-style: none; }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
 
     /* =============================================
-       DESIGN TOKENS / VARIABLES
+       DESIGN TOKENS
     ============================================= */
     :root {
       --navy:        #0B2545;
@@ -58,7 +48,6 @@
       --text-light:  #6B7280;
       --border:      #E1E8F0;
       --border-dark: #CBD5E1;
-
       --font-base:   'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       --radius:      8px;
       --radius-lg:   14px;
@@ -67,8 +56,7 @@
       --shadow-md:   0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
       --shadow-lg:   0 10px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
       --transition:  0.2s ease;
-
-      --max-width: 1100px;
+      --max-width:   1100px;
     }
 
     /* =============================================
@@ -193,13 +181,8 @@
       border-radius: 2px;
     }
 
-    .nav-links a:hover {
-      color: var(--white);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { width: 100%; }
 
     .nav-cta {
       background: var(--gold) !important;
@@ -211,9 +194,7 @@
       box-shadow: 0 2px 8px rgba(240, 180, 41,0.3) !important;
     }
 
-    .nav-cta::after {
-      display: none !important;
-    }
+    .nav-cta::after { display: none !important; }
 
     .nav-cta:hover {
       background: var(--gold-light) !important;
@@ -221,7 +202,6 @@
       box-shadow: 0 4px 16px rgba(240, 180, 41,0.45) !important;
     }
 
-    /* Hamburger */
     .nav-toggle {
       display: none;
       flex-direction: column;
@@ -242,119 +222,13 @@
       transform-origin: center;
     }
 
-    .nav-toggle[aria-expanded="true"] span:nth-child(1) {
-      transform: translateY(7px) rotate(45deg);
-    }
-
-    .nav-toggle[aria-expanded="true"] span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .nav-toggle[aria-expanded="true"] span:nth-child(3) {
-      transform: translateY(-7px) rotate(-45deg);
-    }
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     /* =============================================
-       HERO
+       BUTTONS
     ============================================= */
-    #home {
-      padding-top: 64px; /* offset for fixed nav */
-      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 60%, #1a4a7a 100%);
-      color: var(--white);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Decorative background patterns */
-    #home::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
-      background-size: 32px 32px;
-      pointer-events: none;
-    }
-
-    #home::after {
-      content: '';
-      position: absolute;
-      top: -200px;
-      right: -150px;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(240, 180, 41, 0.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-      padding: 5rem 0;
-    }
-
-    .hero-content {
-      flex: 1;
-      max-width: 600px;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(201, 168, 76, 0.15);
-      border: 1px solid rgba(201, 168, 76, 0.4);
-      border-radius: 50px;
-      padding: 5px 14px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--gold-light);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-badge::before {
-      content: '';
-      display: inline-block;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--gold);
-    }
-
-    .hero-headline {
-      font-size: clamp(2rem, 4.5vw, 3rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
-      color: var(--white);
-    }
-
-    .hero-headline span {
-      color: var(--gold-light);
-    }
-
-    .hero-sub {
-      font-size: 1.1rem;
-      color: #a8bbd4;
-      margin-bottom: 2rem;
-      line-height: 1.7;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      align-items: center;
-    }
-
     .btn-primary {
       display: inline-block;
       background: var(--gold);
@@ -391,342 +265,351 @@
       background: rgba(201, 168, 76, 0.1);
     }
 
-    /* Hero stats strip */
-    .hero-stats {
-      display: flex;
-      gap: 2.5rem;
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(255,255,255,0.12);
-      flex-wrap: wrap;
-    }
-
-    .hero-stat {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .hero-stat .stat-num {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--gold-light);
-      line-height: 1;
-    }
-
-    .hero-stat .stat-label {
-      font-size: 0.78rem;
-      color: #8ba5c0;
-      margin-top: 2px;
-      letter-spacing: 0.04em;
-    }
-
-    /* Hero visual panel */
-    .hero-visual {
-      flex: 0 0 380px;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .hero-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius-lg);
-      padding: 1.1rem 1.25rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
-    }
-
-    .hero-card:hover {
-      background: rgba(255,255,255,0.1);
-      transform: translateX(5px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-
-    .hero-card-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 10px;
-      background: rgba(240, 180, 41, 0.18);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .hero-card-text strong {
-      display: block;
-      font-size: 0.92rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 3px;
-      letter-spacing: -0.01em;
-    }
-
-    .hero-card-text span {
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.78);
-      line-height: 1.4;
-    }
-
     /* =============================================
-       SERVICES
+       SERVICE PAGE HERO
     ============================================= */
-    #services {
-      padding: 5rem 0;
-      background: var(--off-white);
-    }
-
-    .services-header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .services-header .section-intro {
-      margin: 0 auto;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.75rem;
-      align-items: stretch;
-    }
-
-    .service-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 2.25rem 1.75rem;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border);
-      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
-      display: flex;
-      flex-direction: column;
+    .service-hero {
+      padding-top: 68px;
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 60%, #1a4a7a 100%);
+      color: var(--white);
       position: relative;
       overflow: hidden;
     }
 
-    .service-card::before {
+    .service-hero::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-light));
-      opacity: 0;
-      transition: opacity var(--transition);
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
     }
 
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--border-dark);
+    .service-hero::after {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -150px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(240, 180, 41, 0.1) 0%, transparent 70%);
+      pointer-events: none;
     }
 
-    .service-card:hover::before {
-      opacity: 1;
+    .service-hero-inner {
+      position: relative;
+      z-index: 1;
+      padding: 4rem 0 3.5rem;
+      max-width: 780px;
     }
 
-    .service-icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.25rem;
-      flex-shrink: 0;
-    }
-
-    .service-card h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 0.75rem;
-    }
-
-    .service-card p {
-      font-size: 0.95rem;
-      color: var(--text-mid);
-      line-height: 1.7;
-      flex: 1;
-    }
-
-    .service-card .card-link {
+    .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
-      margin-top: 1.25rem;
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--gold-text);
-      letter-spacing: 0.03em;
+      gap: 8px;
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      border-radius: 50px;
+      padding: 5px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge::before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .service-hero-inner h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      color: var(--white);
+    }
+
+    .service-hero-inner h1 span { color: var(--gold-light); }
+
+    .service-hero-inner .hero-sub {
+      font-size: 1.08rem;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 2rem;
+      line-height: 1.75;
+      max-width: 640px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      position: relative;
+      z-index: 1;
+      padding-top: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .breadcrumb-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+    }
+
+    .breadcrumb-inner a {
+      color: rgba(255,255,255,0.45);
       transition: color var(--transition);
     }
 
-    .service-card .card-link:hover {
+    .breadcrumb-inner a:hover { color: var(--gold-light); }
+    .breadcrumb-inner .sep { color: rgba(255,255,255,0.22); }
+    .breadcrumb-inner .current { color: rgba(255,255,255,0.7); }
+
+    /* =============================================
+       HOW IT WORKS
+    ============================================= */
+    .how-it-works {
+      padding: 5rem 0;
+      background: var(--off-white);
+    }
+
+    .how-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .how-header .section-intro { margin: 0 auto; }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .step-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .step-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .step-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-shrink: 0;
+    }
+
+    .step-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
       color: var(--navy);
+      margin-bottom: 0.6rem;
     }
 
-    .service-card .card-link::after {
-      content: '→';
-      display: inline-block;
-      transition: transform var(--transition);
-    }
-
-    .service-card .card-link:hover::after {
-      transform: translateX(4px);
+    .step-card p {
+      font-size: 0.92rem;
+      color: var(--text-mid);
+      line-height: 1.7;
     }
 
     /* =============================================
-       ABOUT
+       SCHEDULE SECTION
     ============================================= */
-    #about {
+    .schedule-section {
       padding: 5rem 0;
       background: var(--white);
     }
 
-    .about-inner {
+    .schedule-inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
-      align-items: center;
+      align-items: start;
     }
 
-    .about-content .section-intro {
-      margin-bottom: 1.5rem;
-    }
-
-    .about-content p {
-      color: var(--text-mid);
+    .schedule-content p {
       font-size: 0.97rem;
+      color: var(--text-mid);
       line-height: 1.8;
       margin-bottom: 1rem;
     }
 
-    .about-pillars {
+    .schedule-cards {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      margin-top: 1.75rem;
     }
 
-    .pillar {
+    .schedule-card {
+      background: var(--off-white);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
       display: flex;
       align-items: flex-start;
       gap: 1rem;
+      border: 1px solid var(--border);
+      transition: border-color var(--transition), box-shadow var(--transition);
     }
 
-    .pillar-icon {
-      width: 40px;
-      height: 40px;
+    .schedule-card:hover {
+      border-color: var(--border-dark);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .schedule-card-icon {
+      width: 42px;
+      height: 42px;
       border-radius: 8px;
       background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      margin-top: 2px;
     }
 
-    .pillar-text strong {
+    .schedule-card-text strong {
       display: block;
-      font-size: 0.95rem;
-      color: var(--navy);
-      margin-bottom: 2px;
-    }
-
-    .pillar-text span {
       font-size: 0.88rem;
-      color: var(--text-light);
-    }
-
-    /* About visual side */
-    .about-visual {
-      background: linear-gradient(145deg, var(--navy-dark) 0%, #0e3562 100%);
-      border-radius: var(--radius-xl);
-      padding: 2.5rem;
-      color: var(--white);
-      box-shadow: var(--shadow-lg);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .about-visual::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 24px 24px;
-      pointer-events: none;
-    }
-
-    .about-visual h3 {
-      font-size: 1.05rem;
-      color: var(--gold-light);
       font-weight: 700;
-      margin-bottom: 1.75rem;
-      letter-spacing: 0.02em;
-      position: relative;
-      z-index: 1;
+      color: var(--navy);
+      margin-bottom: 3px;
     }
 
-    .about-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    .about-list-item {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-      font-size: 0.93rem;
-      color: #b0c4d8;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .about-list-item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .about-list-item::before {
-      content: '✓';
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: rgba(240, 180, 41,0.25);
-      color: var(--gold-light);
-      font-size: 0.72rem;
-      font-weight: 700;
-      flex-shrink: 0;
+    .schedule-card-text span {
+      font-size: 0.88rem;
+      color: var(--text-mid);
+      line-height: 1.5;
     }
 
     /* =============================================
-       SERVICE AREA & HOURS STRIP
+       PRICING SECTION
     ============================================= */
-    #hours {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-      color: var(--white);
-      padding: 3rem 0;
+    .pricing-section {
+      padding: 5rem 0;
+      background: var(--off-white);
+    }
+
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .pricing-header .section-intro { margin: 0 auto; }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .pricing-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
       position: relative;
       overflow: hidden;
     }
 
-    #hours::before {
+    .pricing-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-dark);
+    }
+
+    .pricing-card:hover::before { opacity: 1; }
+
+    .pricing-card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+
+    .pricing-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.6rem;
+    }
+
+    .pricing-card p {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      line-height: 1.65;
+    }
+
+    .pricing-cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .pricing-cta p {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      margin-bottom: 1.25rem;
+    }
+
+    /* =============================================
+       SECURITY / WHY SECTION
+    ============================================= */
+    .security-section {
+      padding: 5rem 0;
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .security-section::before {
       content: '';
       position: absolute;
       inset: 0;
@@ -735,14 +618,87 @@
       pointer-events: none;
     }
 
+    .security-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .security-content .section-label { color: var(--gold); }
+
+    .security-content .section-title { color: var(--white); }
+
+    .security-content p {
+      color: rgba(255,255,255,0.68);
+      font-size: 0.97rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      max-width: none;
+    }
+
+    .security-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .security-item {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    .security-item-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: rgba(240, 180, 41, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .security-item-text strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 3px;
+    }
+
+    .security-item-text span {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.62);
+      line-height: 1.5;
+    }
+
+    /* =============================================
+       HOURS / CTA STRIP
+    ============================================= */
+    #hours {
+      background: var(--off-white);
+      color: var(--text-dark);
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
     .hours-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 1.5rem;
-      position: relative;
-      z-index: 1;
     }
 
     .hours-block {
@@ -755,8 +711,7 @@
       width: 48px;
       height: 48px;
       border-radius: 10px;
-      background: rgba(240, 180, 41,0.15);
-      border: 1px solid rgba(240, 180, 41,0.3);
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -766,29 +721,30 @@
     .hours-block-text strong {
       display: block;
       font-size: 0.78rem;
-      color: var(--gold-light);
+      color: var(--gold-text);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       margin-bottom: 2px;
+      font-weight: 700;
     }
 
     .hours-block-text span {
       font-size: 0.95rem;
-      color: #c5d5e8;
+      color: var(--text-mid);
     }
 
     .hours-divider {
       width: 1px;
       height: 48px;
-      background: rgba(255,255,255,0.15);
+      background: var(--border-dark);
     }
 
     /* =============================================
-       CONTACT
+       CONTACT / QUOTE FORM
     ============================================= */
     #contact {
       padding: 5rem 0;
-      background: var(--off-white);
+      background: var(--white);
     }
 
     .contact-header {
@@ -796,9 +752,7 @@
       margin-bottom: 3rem;
     }
 
-    .contact-header .section-intro {
-      margin: 0 auto;
-    }
+    .contact-header .section-intro { margin: 0 auto; }
 
     .contact-grid {
       display: grid;
@@ -807,7 +761,6 @@
       align-items: start;
     }
 
-    /* Contact info column */
     .contact-info {
       display: flex;
       flex-direction: column;
@@ -815,7 +768,7 @@
     }
 
     .contact-item {
-      background: var(--white);
+      background: var(--off-white);
       border-radius: var(--radius-lg);
       padding: 1.25rem 1.5rem;
       display: flex;
@@ -858,13 +811,10 @@
       color: var(--text-mid);
     }
 
-    .contact-item-text a:hover {
-      color: var(--navy);
-    }
+    .contact-item-text a:hover { color: var(--navy); }
 
-    /* Quote form */
     .quote-form {
-      background: var(--white);
+      background: var(--off-white);
       border-radius: var(--radius-xl);
       padding: 2.5rem;
       box-shadow: var(--shadow-md);
@@ -1015,9 +965,7 @@
       transition: color var(--transition);
     }
 
-    .footer-nav a:hover {
-      color: var(--gold-light);
-    }
+    .footer-nav a:hover { color: var(--gold-light); }
 
     .footer-bottom {
       text-align: center;
@@ -1028,6 +976,7 @@
     .footer-locations {
       font-size: 0.85rem;
     }
+
     .footer-locations strong {
       display: block;
       color: var(--gold);
@@ -1036,70 +985,33 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
+
     .footer-locations ul {
       display: flex;
       flex-direction: column;
       gap: 0.35rem;
     }
+
     .footer-locations a {
       color: #8ba5c0;
       transition: color var(--transition);
     }
-    .footer-locations a:hover {
-      color: var(--gold-light);
-    }
+
+    .footer-locations a:hover { color: var(--gold-light); }
 
     /* =============================================
-       RESPONSIVE — TABLET (max 900px)
+       RESPONSIVE
     ============================================= */
     @media (max-width: 900px) {
-      .hero-inner {
-        flex-direction: column;
-        text-align: center;
-        padding: 4rem 0;
-      }
-
-      .hero-actions {
-        justify-content: center;
-      }
-
-      .hero-stats {
-        justify-content: center;
-      }
-
-      .hero-visual {
-        flex: none;
-        width: 100%;
-        max-width: 460px;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .about-inner {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hours-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-      }
-
-      .hours-divider {
-        display: none;
-      }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .schedule-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .pricing-grid { grid-template-columns: 1fr 1fr; }
+      .security-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hours-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .hours-divider { display: none; }
     }
 
-    /* =============================================
-       RESPONSIVE — MOBILE (max 600px)
-    ============================================= */
     @media (max-width: 600px) {
       .nav-links {
         display: none;
@@ -1117,42 +1029,18 @@
         box-shadow: var(--shadow-md);
       }
 
-      .nav-links.open {
-        display: flex;
-      }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: flex; }
 
-      .nav-toggle {
-        display: flex;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .hero-visual {
-        display: none;
-      }
-
-      .hero-stats {
-        gap: 1.5rem;
-      }
-
-      .quote-form {
-        padding: 1.75rem 1.25rem;
-      }
+      .steps-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .quote-form { padding: 1.75rem 1.25rem; }
     }
 
     /* =============================================
-       SCROLL REVEAL ANIMATIONS
+       SCROLL REVEAL
     ============================================= */
     .reveal {
       opacity: 0;
@@ -1169,53 +1057,27 @@
     .reveal-delay-2 { transition-delay: 0.2s; }
     .reveal-delay-3 { transition-delay: 0.3s; }
   </style>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Word's Mail Service of Texas",
-  "description": "Postal service, interoffice mail, and bank deposit courier services for The Woodlands, TX businesses.",
-  "telephone": "(713) 526-8381",
-  "email": "info@wordsmailservice.com",
-  "url": "https://wordsmailservice.com/the-woodlands.html",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "405 N Adams St",
-    "addressLocality": "Houston",
-    "addressRegion": "TX",
-    "postalCode": "77011",
-    "addressCountry": "US"
-  },
-  "areaServed": ["The Woodlands", "Market Street", "Cochran's Crossing", "Indian Springs"],
-  "openingHours": "Mo-Fr 08:00-18:00"
-}
-</script>
 </head>
 <body>
 
-  <!-- =============================================
-       NAVIGATION
-  ============================================= -->
+  <!-- NAVIGATION -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
 
-      <a href="#home" class="nav-logo" aria-label="Word's Mail Service of Texas — Home">
+      <a href="index.html" class="nav-logo" aria-label="Word's Mail Service of Texas — Home">
         <span class="logo-main">Word's Mail Service</span>
-        <span class="logo-sub">of Texas &mdash; The Woodlands, TX</span>
+        <span class="logo-sub">of Texas &mdash; Houston, TX</span>
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
 
       <ul class="nav-links" id="navLinks" role="list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#hours">Hours</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#hours">Hours</a></li>
         <li><a href="#contact" class="nav-cta">Request a Quote</a></li>
       </ul>
 
@@ -1223,185 +1085,222 @@
   </nav>
 
 
-  <!-- =============================================
-       HERO SECTION
-  ============================================= -->
-  <section id="home" aria-label="Hero">
-    <div class="container hero-inner">
+  <!-- HERO -->
+  <section class="service-hero" aria-label="Postal Services Houston">
+    <div class="container">
+      <div class="service-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <div class="breadcrumb-inner">
+            <a href="index.html">Home</a>
+            <span class="sep">›</span>
+            <a href="index.html#services">Services</a>
+            <span class="sep">›</span>
+            <span class="current">Postal Services</span>
+          </div>
+        </nav>
 
-      <div class="hero-content">
-        <div class="hero-badge">Serving The Woodlands Businesses Since 1977</div>
+        <div class="hero-badge">Serving Houston Businesses Since 1977</div>
 
-        <h1 class="hero-headline">
-          The Woodlands Mail &amp; Courier<br>
-          <span>Services for Businesses</span>
-        </h1>
+        <h1>Houston Postal Services<br><span>for Businesses — Handled Daily</span></h1>
 
         <p class="hero-sub">
-          Word's Mail Service of Texas has provided dependable postal services, daily interoffice mail routes, and secure bank deposit courier solutions to The Woodlands, TX businesses since 1977.
+          Outgoing mail prep, metering, sorting, and scheduled pickups for Houston businesses. Word's Mail Service of Texas manages your postal operations so your staff doesn't have to — every Monday through Friday.
         </p>
 
         <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Request a Woodlands Courier Quote</a>
-          <a href="#services" class="btn-outline">View Our Woodlands Mail Services</a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="stat-num">3</span>
-            <span class="stat-label">Core Services</span>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-num">5</span>
-            <span class="stat-label">Days a Week</span>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-num">1977</span>
-            <span class="stat-label">Serving The Woodlands, TX</span>
-          </div>
+          <a href="#contact" class="btn-primary">Request a Postal Services Quote</a>
+          <a href="index.html#services" class="btn-outline">View All Services</a>
         </div>
       </div>
-
-      <!-- Right side service preview cards -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-card">
-          <div class="hero-card-icon"><img src="assets/envelope.svg" width="24" height="24" alt=""></div>
-          <div class="hero-card-text">
-            <strong>Postal Services</strong>
-            <span>Outgoing mail prep &amp; scheduled pickup</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card-icon"><img src="assets/building-office.svg" width="24" height="24" alt=""></div>
-          <div class="hero-card-text">
-            <strong>Interoffice Mail Routes</strong>
-            <span>Daily delivery between offices &amp; buildings</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card-icon"><img src="assets/bank.svg" width="24" height="24" alt=""></div>
-          <div class="hero-card-text">
-            <strong>Bank Deposit Couriers</strong>
-            <span>Insured, timely delivery to your bank</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
 
-  <!-- =============================================
-       SERVICES SECTION
-  ============================================= -->
-  <section id="services" aria-labelledby="services-heading">
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" aria-labelledby="how-heading">
     <div class="container">
 
-      <div class="services-header reveal">
-        <span class="section-label">What We Do</span>
-        <h2 class="section-title" id="services-heading">Mail &amp; Courier Services for The Woodlands Businesses</h2>
-        <p class="section-intro">
-          Trusted by The Woodlands businesses, medical offices, law firms, and administrative organizations across the city that demand punctual, professional service every day.
-        </p>
+      <div class="how-header reveal">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title" id="how-heading">Your Outgoing Mail — Managed From Start to Finish</h2>
+        <p class="section-intro">We fit into your existing workflow and take the daily mail burden off your team completely.</p>
       </div>
 
-      <div class="services-grid">
-
-        <!-- Service 1: Postal -->
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true"><img src="assets/envelope.svg" width="28" height="28" alt="Outgoing postal mail service for The Woodlands businesses"></div>
-          <h3>Postal Services for The Woodlands Businesses</h3>
-          <p>
-            We handle all aspects of your outgoing business mail in The Woodlands — sorting, labeling, and metering — so it's ready to go every day. Scheduled pickups and drop-offs mean your correspondence is never delayed, freeing your staff to focus on what matters most.
-          </p>
-          <a href="#contact" class="card-link">Request a quote for The Woodlands postal service</a>
-        </article>
-
-        <!-- Service 2: Interoffice -->
-        <article class="service-card reveal reveal-delay-1">
-          <div class="service-icon" aria-hidden="true"><img src="assets/building-office.svg" width="28" height="28" alt="Interoffice mail routes connecting The Woodlands offices and buildings"></div>
-          <h3>Interoffice Mail Routes in The Woodlands</h3>
-          <p>
-            Our dedicated daily interoffice mail routes connect your The Woodlands offices, departments, and buildings with precision and consistency. Whether across the hall or across town, internal documents, packages, and communications move on time, every time.
-          </p>
-          <a href="#contact" class="card-link">Request a quote for The Woodlands interoffice mail</a>
-        </article>
-
-        <!-- Service 3: Bank Deposit -->
-        <article class="service-card reveal reveal-delay-2">
-          <div class="service-icon" aria-hidden="true"><img src="assets/bank.svg" width="28" height="28" alt="Secure bank deposit courier service in The Woodlands, TX"></div>
-          <h3>Secure Bank Deposit Courier Service in The Woodlands</h3>
-          <p>
-            Our The Woodlands bank deposit courier service handles every pickup with strict security protocols and full insurance coverage, ensuring your funds arrive at your designated bank safely and on schedule. We eliminate the need to send employees on daily bank runs, reducing risk and freeing up valuable staff time. Every delivery is documented with a verified chain of custody so you always have a clear record of each transaction.
-          </p>
-          <a href="#contact" class="card-link">Request a quote for The Woodlands bank deposit courier</a>
-        </article>
-
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-num">1</div>
+          <h3>We Assess Your Needs</h3>
+          <p>We start by understanding your mail volume, outgoing frequency, and any special requirements — bulk mail, certified letters, metered postage — and build a pickup schedule around your operations.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-1">
+          <div class="step-num">2</div>
+          <h3>Scheduled Daily Pickup</h3>
+          <p>Our courier arrives at your office at a consistent time each day. We collect all outgoing mail, sort by class, apply metering where needed, and prepare everything for same-day USPS processing.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-num">3</div>
+          <h3>Same-Day Processing</h3>
+          <p>Your mail is transported and submitted to USPS the same business day. No backlogs, no delays sitting in an office basket — your correspondence moves the day you need it to.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-3">
+          <div class="step-num">4</div>
+          <h3>Consistent, Predictable Routine</h3>
+          <p>Once your route is established, the schedule becomes something your team can depend on. No more chasing down who's handling the mail — it's handled, every day, without reminders.</p>
+        </div>
       </div>
+
     </div>
   </section>
 
 
-  <!-- =============================================
-       ABOUT US SECTION
-  ============================================= -->
-  <section id="about" aria-labelledby="about-heading">
+  <!-- SCHEDULE -->
+  <section class="schedule-section" aria-labelledby="schedule-heading">
     <div class="container">
-      <div class="about-inner">
+      <div class="schedule-inner">
 
-        <div class="about-content reveal">
-          <span class="section-label">Who We Are</span>
-          <h2 class="section-title" id="about-heading">The Woodlands' Trusted Mail &amp; Courier Company Since 1977</h2>
-
-          <p class="section-intro">
-            Word's Mail Service of Texas was founded in 1977 with a single mission: to give The Woodlands businesses a courier and mail partner they can count on — day in, day out.
-          </p>
-
+        <div class="schedule-content reveal">
+          <span class="section-label">Service Schedule</span>
+          <h2 class="section-title" id="schedule-heading">Monday Through Friday, Built Around Your Hours</h2>
           <p>
-            We understand that for The Woodlands law firms, medical offices, and administrative organizations, the mail is never just mail. It's patient records, legal documents, financial deposits, and time-sensitive correspondence. That's why our The Woodlands courier service treats every pickup and delivery with the same level of urgency and professionalism.
+            Our Houston postal service routes run Monday through Friday. Pickup windows are assigned based on your location and route, and we work with you to find a time that doesn't disrupt your business day.
           </p>
-
           <p>
-            We are a locally operated The Woodlands company, deeply invested in the local business community. Our routes, our schedules, and our processes are built around your operational needs — not the other way around. We pride ourselves on long-term relationships built on consistent service, open communication, and earned trust.
+            Most clients in downtown Houston, the Galleria corridor, and the Medical Center area are serviced during morning windows. Clients in outer areas of Greater Houston are assigned midday windows. We communicate your exact pickup time before service begins — no guesswork.
           </p>
+          <p>
+            Need a schedule adjustment? We work with you directly. Our routes are not rigid corporate systems — they're built around real Houston businesses with real operational needs.
+          </p>
+        </div>
 
-          <div class="about-pillars">
-            <div class="pillar">
-              <div class="pillar-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ffffff" viewBox="0 0 256 256"><path d="M208,80H168V56a40,40,0,0,0-80,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM104,56a24,24,0,0,1,48,0V80H104ZM208,208H48V96H208V208Z"/><circle cx="128" cy="152" r="16"/></svg></div>
-              <div class="pillar-text">
-                <strong>Security &amp; Chain of Custody</strong>
-                <span>Insured deliveries and documented handling for sensitive items</span>
-              </div>
+        <div class="schedule-cards reveal reveal-delay-1">
+          <div class="schedule-card">
+            <div class="schedule-card-icon" aria-hidden="true"><img src="assets/calendar-check.svg" width="22" height="22" alt=""></div>
+            <div class="schedule-card-text">
+              <strong>Days of Service</strong>
+              <span>Monday through Friday — five days a week, every week</span>
             </div>
-            <div class="pillar">
-              <div class="pillar-icon" aria-hidden="true"><img src="assets/calendar-check.svg" width="22" height="22" alt=""></div>
-              <div class="pillar-text">
-                <strong>Consistent Daily Schedules</strong>
-                <span>Reliable routes you can build your operations around</span>
-              </div>
+          </div>
+          <div class="schedule-card">
+            <div class="schedule-card-icon" aria-hidden="true"><img src="assets/clock.svg" width="22" height="22" alt=""></div>
+            <div class="schedule-card-text">
+              <strong>Pickup Windows</strong>
+              <span>Morning and midday windows assigned by location; aligned with your business hours</span>
             </div>
-            <div class="pillar">
-              <div class="pillar-icon" aria-hidden="true"><img src="assets/handshake.svg" width="22" height="22" alt=""></div>
-              <div class="pillar-text">
-                <strong>Long-Term Business Relationships</strong>
-                <span>We grow with our clients and adapt to your evolving needs</span>
-              </div>
+          </div>
+          <div class="schedule-card">
+            <div class="schedule-card-icon" aria-hidden="true"><img src="assets/envelope.svg" width="22" height="22" alt=""></div>
+            <div class="schedule-card-text">
+              <strong>Same-Day Processing</strong>
+              <span>All collected mail is submitted to USPS the same business day as pickup</span>
+            </div>
+          </div>
+          <div class="schedule-card">
+            <div class="schedule-card-icon" aria-hidden="true"><img src="assets/map-pin.svg" width="22" height="22" alt=""></div>
+            <div class="schedule-card-text">
+              <strong>Service Area</strong>
+              <span>Downtown, Medical Center, Galleria, and Greater Houston metropolitan area</span>
             </div>
           </div>
         </div>
 
-        <!-- About visual / checklist panel -->
-        <div class="about-visual reveal reveal-delay-1">
-          <h3>Why The Woodlands Businesses Choose Us</h3>
-          <ul class="about-list">
-            <li class="about-list-item">Locally owned and operated in The Woodlands, TX</li>
-            <li class="about-list-item">Dedicated routes for medical, legal, and corporate clients</li>
-            <li class="about-list-item">Insured and documented courier service</li>
-            <li class="about-list-item">Flexible scheduling to match your business hours</li>
-            <li class="about-list-item">Dependable same-day interoffice delivery</li>
-            <li class="about-list-item">Direct bank deposit drop-off with verified receipt</li>
-            <li class="about-list-item">Serving The Woodlands and the surrounding metro area</li>
-          </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRICING -->
+  <section class="pricing-section" aria-labelledby="pricing-heading">
+    <div class="container">
+
+      <div class="pricing-header reveal">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title" id="pricing-heading">Custom Pricing for Your Mail Volume</h2>
+        <p class="section-intro">No published rate cards — because no two businesses have the same mail operation. We quote based on your actual needs, not a one-size-fits-all package.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-card-icon" aria-hidden="true"><img src="assets/envelope.svg" width="24" height="24" alt=""></div>
+          <h3>Volume-Based Pricing</h3>
+          <p>Your rate is based on the volume and frequency of your outgoing mail. Higher-volume accounts benefit from lower per-piece pricing. We'll assess your average daily output before quoting.</p>
+        </div>
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-card-icon" aria-hidden="true"><img src="assets/calendar-check.svg" width="24" height="24" alt=""></div>
+          <h3>Monthly Service Agreements</h3>
+          <p>Most clients operate on a flat monthly agreement — predictable costs, no surprises. This covers your route, pickup labor, and standard mail processing. Postage costs are passed through at face value.</p>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-card-icon" aria-hidden="true"><img src="assets/phone.svg" width="24" height="24" alt=""></div>
+          <h3>Free Quote — One Call</h3>
+          <p>Getting a quote is straightforward. Call us at (713) 526-8381 or fill out the form below. We'll ask a few questions about your mail volume and location, then send you a clear written quote — no obligation.</p>
+        </div>
+      </div>
+
+      <div class="pricing-cta reveal">
+        <p>Ready to stop managing your own mail? Let's talk about what fits your operation.</p>
+        <a href="#contact" class="btn-primary" style="display: inline-block; background: var(--navy); color: var(--white);">Request a Free Postal Services Quote</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECURITY / RELIABILITY -->
+  <section class="security-section" aria-labelledby="reliability-heading">
+    <div class="container">
+      <div class="security-inner">
+
+        <div class="security-content reveal">
+          <span class="section-label">Why It Works</span>
+          <h2 class="section-title" id="reliability-heading">A Documented Mail Chain — Every Day</h2>
+          <p>
+            When an employee handles outgoing mail, it can sit on a desk, get missed in a rush, or go out without proper postage. When we handle it, there's a defined process and a consistent professional behind it.
+          </p>
+          <p>
+            We've been managing Houston business mail since 1977. Our couriers know the routes, know the USPS submission points, and know what on-time looks like — because they do this every single day.
+          </p>
+          <p>
+            For law firms, medical offices, and financial businesses, outgoing mail is often time-sensitive and confidential. We treat it accordingly.
+          </p>
+        </div>
+
+        <div class="security-items reveal reveal-delay-1">
+          <div class="security-item">
+            <div class="security-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F0B429" viewBox="0 0 256 256"><path d="M208,80H168V56a40,40,0,0,0-80,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM104,56a24,24,0,0,1,48,0V80H104ZM208,208H48V96H208V208Z"/><circle cx="128" cy="152" r="16"/></svg>
+            </div>
+            <div class="security-item-text">
+              <strong>Dedicated, Trained Couriers</strong>
+              <span>Not gig workers or rotating contractors — consistent professionals who know your account</span>
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F0B429" viewBox="0 0 256 256"><path d="M243.28,68.24l-24-16a8,8,0,0,0-8.56,0L192,60.75l-18.72-8.51a8,8,0,0,0-6.56,0L148,60.75l-18.72-8.51a8,8,0,0,0-6.56,0l-18.72,8.51L85.28,52.24a8,8,0,0,0-8.56,0l-24,16A8,8,0,0,0,48,68V88a8,8,0,0,0,16,0V72.79L82.72,61.51,96,67.25V96a8,8,0,0,0,16,0V67.25l18.72-8.51L148,67.25V96a8,8,0,0,0,16,0V67.25l18.72-8.51L192,67.25V96a8,8,0,0,0,16,0V72.79l18.72,11.28A8,8,0,0,0,240,88V68A8,8,0,0,0,243.28,68.24ZM208,128H48a8,8,0,0,0,0,16H208a8,8,0,0,0,0-16Zm0,40H48a8,8,0,0,0,0,16H208a8,8,0,0,0,0-16Z"/></svg>
+            </div>
+            <div class="security-item-text">
+              <strong>Handles All Mail Classes</strong>
+              <span>First class, certified, bulk, metered — we manage whatever your business sends</span>
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F0B429" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg>
+            </div>
+            <div class="security-item-text">
+              <strong>Same-Day USPS Submission</strong>
+              <span>Mail collected today goes out today — no overnight holding, no missed cut-offs</span>
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F0B429" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a16,16,0,1,1,16,16A16,16,0,0,1,112,84Z"/></svg>
+            </div>
+            <div class="security-item-text">
+              <strong>47+ Years of Houston Postal Experience</strong>
+              <span>We've been doing this since 1977 — long enough to have earned the trust of Houston's most demanding businesses</span>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -1409,17 +1308,15 @@
   </section>
 
 
-  <!-- =============================================
-       SERVICE AREA & HOURS STRIP
-  ============================================= -->
-  <section id="hours" aria-label="Service area and hours">
+  <!-- HOURS / CTA STRIP -->
+  <section id="hours" aria-label="Contact and hours">
     <div class="container hours-inner">
 
       <div class="hours-block">
         <div class="hours-icon" aria-hidden="true"><img src="assets/map-pin.svg" width="26" height="26" alt=""></div>
         <div class="hours-block-text">
           <strong>Service Area</strong>
-          <span>The Woodlands, Market Street, Cochran's Crossing, Indian Springs &amp; Surrounding Areas</span>
+          <span>Downtown, Medical Center, Galleria &amp; Greater Houston, TX</span>
         </div>
       </div>
 
@@ -1451,25 +1348,19 @@
   </section>
 
 
-  <!-- =============================================
-       CONTACT SECTION
-  ============================================= -->
+  <!-- CONTACT / FORM -->
   <section id="contact" aria-labelledby="contact-heading">
     <div class="container">
 
       <div class="contact-header reveal">
-        <span class="section-label">Get In Touch</span>
-        <h2 class="section-title" id="contact-heading">Contact Our Woodlands Mail &amp; Courier Team</h2>
-        <p class="section-intro">
-          Reach out to discuss a custom The Woodlands mail and courier solution for your business. We'll get back to you promptly.
-        </p>
+        <span class="section-label">Get a Quote</span>
+        <h2 class="section-title" id="contact-heading">Request Houston Postal Services Pricing</h2>
+        <p class="section-intro">Tell us about your outgoing mail volume and we'll get back to you within one business day with a clear, written quote.</p>
       </div>
 
       <div class="contact-grid">
 
-        <!-- Contact info column -->
         <div class="contact-info reveal">
-
           <div class="contact-item">
             <div class="contact-item-icon" aria-hidden="true"><img src="assets/map-pin.svg" width="22" height="22" alt=""></div>
             <div class="contact-item-text">
@@ -1477,7 +1368,6 @@
               <span>405 N Adams St<br>Houston, TX 77011</span>
             </div>
           </div>
-
           <div class="contact-item">
             <div class="contact-item-icon" aria-hidden="true"><img src="assets/phone.svg" width="22" height="22" alt=""></div>
             <div class="contact-item-text">
@@ -1485,7 +1375,6 @@
               <a href="tel:+17135268381">(713) 526-8381</a>
             </div>
           </div>
-
           <div class="contact-item">
             <div class="contact-item-icon" aria-hidden="true"><img src="assets/envelope.svg" width="22" height="22" alt=""></div>
             <div class="contact-item-text">
@@ -1493,7 +1382,6 @@
               <a href="mailto:info@wordsmailservice.com">info@wordsmailservice.com</a>
             </div>
           </div>
-
           <div class="contact-item">
             <div class="contact-item-icon" aria-hidden="true"><img src="assets/envelope.svg" width="22" height="22" alt=""></div>
             <div class="contact-item-text">
@@ -1501,7 +1389,6 @@
               <a href="mailto:quotes@wordsmailservice.com">quotes@wordsmailservice.com</a>
             </div>
           </div>
-
           <div class="contact-item">
             <div class="contact-item-icon" aria-hidden="true"><img src="assets/clock.svg" width="22" height="22" alt=""></div>
             <div class="contact-item-text">
@@ -1509,13 +1396,11 @@
               <span>Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM</span>
             </div>
           </div>
-
         </div>
 
-        <!-- Quote request form -->
         <div class="quote-form reveal reveal-delay-1">
           <h3>Request a Free Quote</h3>
-          <p>Fill out the form below and a member of our team will contact you within one business day.</p>
+          <p>Fill out the form below and we'll follow up within one business day.</p>
 
           <div class="form-row">
             <div class="form-group">
@@ -1547,8 +1432,7 @@
           <div class="form-group">
             <label for="service">Service Needed</label>
             <select id="service" name="service">
-              <option value="" disabled selected>Select a service...</option>
-              <option value="postal">Postal Services</option>
+              <option value="postal" selected>Postal Services</option>
               <option value="interoffice">Interoffice Mail Routes</option>
               <option value="bank-deposit">Bank Deposit Couriers</option>
               <option value="multiple">Multiple Services</option>
@@ -1556,8 +1440,8 @@
           </div>
 
           <div class="form-group">
-            <label for="message">Additional Details</label>
-            <textarea id="message" name="message" placeholder="Tell us about your mail volume, locations, or any special requirements..."></textarea>
+            <label for="message">Tell Us About Your Mail Volume</label>
+            <textarea id="message" name="message" placeholder="Approximate daily mail pieces, mail types (first class, certified, bulk), number of locations, and any special requirements..."></textarea>
           </div>
 
           <button type="submit" class="form-submit" disabled>Send Quote Request</button>
@@ -1568,9 +1452,7 @@
   </section>
 
 
-  <!-- =============================================
-       FOOTER
-  ============================================= -->
+  <!-- FOOTER -->
   <footer role="contentinfo">
     <div class="container">
 
@@ -1578,15 +1460,15 @@
         <div class="footer-brand">
           <div class="logo-main">Word's Mail Service of Texas</div>
           <div class="logo-sub">Houston, TX</div>
-          <div class="footer-tagline">Your dependable Woodlands mail &amp; courier partner.</div>
+          <div class="footer-tagline">Your dependable local mail &amp; courier partner.</div>
         </div>
 
         <nav aria-label="Footer navigation">
           <ul class="footer-nav" role="list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#hours">Hours</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#hours">Hours</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -1618,11 +1500,7 @@
   </footer>
 
 
-  <!-- =============================================
-       MOBILE NAV TOGGLE (no framework JS)
-  ============================================= -->
   <script>
-    // Mobile nav toggle
     var toggle = document.getElementById('navToggle');
     var links  = document.getElementById('navLinks');
     toggle.addEventListener('click', function () {
@@ -1636,13 +1514,11 @@
       });
     });
 
-    // Navbar scroll effect
     var navbar = document.getElementById('navbar');
     window.addEventListener('scroll', function () {
       navbar.classList.toggle('scrolled', window.scrollY > 30);
     }, { passive: true });
 
-    // Scroll reveal animations
     var reveals = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
       var observer = new IntersectionObserver(function (entries) {
