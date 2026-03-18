@@ -702,6 +702,10 @@ body {
   background: rgba(255,255,255,0.15);
 }
 
+.hours-inner > .btn-primary {
+  margin-left: auto;
+}
+
 /* Hours strip — light variant for service pages */
 .service-page #hours {
   background: var(--off-white);
