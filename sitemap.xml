@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://wordsmailservice.com/</loc>
+    <loc>https://wordsmail.com/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -11,21 +11,21 @@
 
   <!-- Service pages -->
   <url>
-    <loc>https://wordsmailservice.com/postal-services-houston.html</loc>
+    <loc>https://wordsmail.com/postal-services-houston.html</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://wordsmailservice.com/interoffice-mail-houston.html</loc>
+    <loc>https://wordsmail.com/interoffice-mail-houston.html</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://wordsmailservice.com/bank-deposit-courier.html</loc>
+    <loc>https://wordsmail.com/bank-deposit-courier.html</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -33,14 +33,14 @@
 
   <!-- Location pages -->
   <url>
-    <loc>https://wordsmailservice.com/sugar-land.html</loc>
+    <loc>https://wordsmail.com/sugar-land.html</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://wordsmailservice.com/the-woodlands.html</loc>
+    <loc>https://wordsmail.com/the-woodlands.html</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
